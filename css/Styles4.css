@@ -1,1 +1,18 @@
-﻿
+﻿ul {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: auto 1fr;
+}
+li {
+  display: grid;
+  grid: subgrid;
+  margin: 0.5em;
+  border: solid;
+  padding: 0.5em;
+}
+label {
+  grid-column: 1;
+}
+input {
+  grid-column: 2;
+}
